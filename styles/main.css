@@ -11,14 +11,7 @@
     min-height: 400px;
 }
 
-.btn-circle {
-    border-radius: 50%;
-    height: 60px;
-    border-width: 1px;
-    border-color: gainsboro;
-    border-style:solid;
-    /* text-shadow: none; */
-}
+
 /* LEFTSIDE MENU STYLES END */
 
 .inventary {
@@ -34,11 +27,8 @@
     align-items: center;
 }
 
-.btn-large {
-    width: 20%;
-    border-radius: 6px;
-    border-width: 0.5px;
-    border-style: solid;
+.hide {
+    display: none !important;
 }
 
 .table-area {

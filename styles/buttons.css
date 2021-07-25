@@ -1,0 +1,24 @@
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: none;
+    background-color: darkred;
+    color: #fff
+}
+
+.btn-large {
+    width: 20%;
+    border-radius: 6px;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    height: 60px;
+    border-width: 1px;
+    border-color: gainsboro;
+    border-style:solid;
+}

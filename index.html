@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +11,9 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/forms.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/tables.css" />
     <!-- MY STYLES END  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,75 +43,132 @@
     </header>
     <main class="flex-mcontainer">
         <section class="leftside-menu">
-            <button class="btn-circle" title="Change Operation">
+            <button id="change-button" class="btn-circle btn" title="Change Operation">
                 Change
             </button>
         </section>
         <section class="inventary">
             <div class="button-area">
-                <button id="product-button" class="btn-large">
+                <button id="product-button" class="btn btn-large hide">
                     Cadastrar Produto
                 </button>
-                <button id="customer-button" class="btn-large">
+                <button id="customer-button" class="btn btn-large show">
                     Cadastrar Cliente
                 </button>
             </div>
             <div class="table-area">
-                <div>
-                    <div>
-                        Customer table
+                <div id="customer-table" class="customer-table">
+                    <div class="table-title">
+                        CUSTOMER TABLE
                     </div>
-                    <table id="customer-table">
+                    <table id="customer">
                         <thead>
-                            <th>
-                                ID
-                            </th>
-                            <th>
-                                NAME
-                            </th>
-                            <th>
-                                EMAIL
-                            </th>
-                            <th>
-                                PHONE
-                            </th>
+                            <tr>
+                                <th >
+                                    ID
+                                </th>
+                                <th>
+                                    NAME
+                                </th>
+                                <th>
+                                    EMAIL
+                                </th>
+                                <th>
+                                    PHONE
+                                </th>
+                            </tr>
                         </thead>
                         <tbody>
-    
+
                         </tbody>
                     </table>
                 </div>
-                <div>
-                    <div>
+                <div id="product-table" class="hide product-table">
+                    <div class="table-title">
                         PRODUCTS
                     </div>
-                    <table id="product-table">
+                    <table id="product">
                         <thead>
-                            <th>
-                                ID
-                            </th>
-                            <th>
-                                NAME
-                            </th>
-                            <th>
-                                PRICE
-                            </th>
-                            <th>
-                                QUANTITY
-                            </th>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    NAME
+                                </th>
+                                <th>
+                                    PRICE
+                                </th>
+                                <th>
+                                    QUANTITY
+                                </th>
+                            </tr>
                         </thead>
                         <tbody>
-    
+
                         </tbody>
                     </table>
                 </div>
 
             </div>
+            
         </section>
-        <section class="my-forms">
+        <div id="translucid-screen" class="translucid-screen hide">
+        </div>
+        <div id="customer-form" class="form hide">
+                <div>
+                    NEW CUSTOMER
+                </div>
+                <div>
+                    <label for="cname">
+                        NAME
+                    </label>
+                    <input id="cname" type="text" name="cname">
+                </div>
+                <div>
+                    <label for="cemail">
+                        EMAIL
+                    </label>
+                    <input id="cemail" type="text" name="cemail">
+                </div>
+                <div>
+                    <label for="cphone">
+                        PHONE
+                    </label>
+                    <input id="cphone" type="text" name="cphone">
+                </div>
+                <button id="c-submit" class="btn btn-submit">
+                    Submit
+                </button>
 
-        </section>
+            </div>
+            <div id="product-form" class="form hide">
+                <div>
+                    FILL PRODUCT'S INFO
+                </div>
+                <div>
+                    <label for="pname">
+                        NAME
+                    </label>
+                    <input id="pname" type="text" name="pname">
+                </div>
+                <div>
+                    <label>
+                        PRICE
+                    </label>
+                    <input id="pprice" type="text" name="pprice" placeholder="$">
+                </div>
+                <div>
+                    <label>
+                        AVAILABLE QUANTITY
+                    </label>
+                    <input id="pqtt" type="text" name="pqtt">
+                </div>
+                <button id="p-submit" class="btn btn-submit">
+                    Submit
+                </button>
 
+            </div>
     </main>
     <footer>
         <div class="flex-fcontainer">
@@ -115,5 +176,7 @@
             <a href="https://github.com/Rockett12" target="_blank"> Rockett</a>
         </div>
     </footer>
+    <script src="src/script.js"></script>
 </body>
+
 </html>
