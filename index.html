@@ -1,44 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Felipe Cardoso" />
+    <title>Tekkadan</title>
+    <link rel="icon" href="assets/Tekkadan_Logo.png">
+    <!-- MY STYLES START -->
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <!-- MY STYLES END  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Felipe Cardoso" />
-        <title>Tekkadan</title>
-        <link rel="icon" href="assets/Tekkadan_Logo.png">
-        <link rel="stylesheet" href="styles/header.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@900&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-        
-    </head>
-    <body>
-        <header>
-            <div class="header">
-                <div class="to-left">
-                    <img class="tiny-img" src="assets/Tekkadan_Logo.png">
-                    <p class="strong-text">TEKKADAN</p>
-                </div>
-                <div class="to-right">
-                    <a class="header-option">
-                        Notifications
-                    </a>
-                    <a class="header-option">
-                        Logout
-                    </a>
-                </div>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="to-left flex-hcontainer">
+                <img class="tiny-img" src="assets/Tekkadan_Logo.png">
+                <p class="strong-text">TEKKADAN</p>
             </div>
-        </header>
-        <main>
+            <div class="to-right flex-hcontainer">
+                <a class="header-option btn">
+                    Notifications
+                </a>
+                <a class="header-option btn">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="flex-mcontainer">
+        <section class="leftside-menu">
+            <button class="btn-circle" title="Change Operation">
+                Change
+            </button>
+        </section>
+        <section class="inventary">
+            <div class="button-area">
+                <button id="product-button" class="btn-large">
+                    Cadastrar Produto
+                </button>
+                <button id="customer-button" class="btn-large">
+                    Cadastrar Cliente
+                </button>
+            </div>
+            <div class="table-area">
+                <div>
+                    <div>
+                        Customer table
+                    </div>
+                    <table id="customer-table">
+                        <thead>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                NAME
+                            </th>
+                            <th>
+                                EMAIL
+                            </th>
+                            <th>
+                                PHONE
+                            </th>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div>
+                        Product table
+                    </div>
+                    <table id="product-table">
+                        <thead>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                ITEM
+                            </th>
+                            <th>
+                                PRICE
+                            </th>
+                            <th>
+                                QUANTITY
+                            </th>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </div>
 
-        </main>
-        <footer>
-    
-        </footer>
-    </body>
-    
+            </div>
+        </section>
+        <section class="my-forms">
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="flex-fcontainer">
+            © 2021 All Rights Reserved. Made by
+            <a href="https://github.com/Rockett12" target="_blank"> Rockett</a>
+        </div>
+    </footer>
+</body>
 </html>
