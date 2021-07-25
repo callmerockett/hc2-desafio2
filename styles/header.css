@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  solid 1px;
+    border-bottom-color: gainsboro;
+    width: 100%;
+}
+
+.to-left {
+    display: flex;
+    align-items: center;
+}
+
+.to-right {
+    display: flex;
+}
+
+.tiny-img {
+    width: 8%;
+    height: 10%;
+}
