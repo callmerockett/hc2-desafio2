@@ -2,7 +2,7 @@
 
 A very basic experimental raw site.
 
-funciontalities:
+functionalities:
 
  - You can add customers 
  - You can add products
