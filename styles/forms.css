@@ -1,11 +1,27 @@
 .form {
-    position: absolute;
+    position: fixed;
     top: 20%;
     left: 40%;
     background-color: #fff;
     min-height: 40%;
     min-width: 20%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3px;
 }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+.form-header {
+    text-align: center;
+}
+/* .form-group > input {
+    max-width: 70%;
+} */
 
 .translucid-screen {
     position: absolute;
@@ -17,4 +33,8 @@
     height: 100%;
     background-color: black;
     opacity: 70%;
+}
+
+.invalid-field {
+    border: red solid;
 }

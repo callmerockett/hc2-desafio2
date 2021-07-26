@@ -24,21 +24,21 @@
 
 </head>
 
-<body>
+<body onload="showTable()">
     <header>
         <div class="header">
             <div class="to-left flex-hcontainer">
                 <img class="tiny-img" src="assets/Tekkadan_Logo.png">
                 <p class="strong-text">TEKKADAN</p>
             </div>
-            <div class="to-right flex-hcontainer">
+            <!-- <div class="to-right flex-hcontainer">
                 <a class="header-option btn">
                     Notifications
                 </a>
                 <a class="header-option btn">
                     Logout
                 </a>
-            </div>
+            </div> -->
         </div>
     </header>
     <main class="flex-mcontainer">
@@ -52,7 +52,7 @@
                 <button id="product-button" class="btn btn-large hide">
                     Cadastrar Produto
                 </button>
-                <button id="customer-button" class="btn btn-large show">
+                <button id="customer-button" class="btn btn-large">
                     Cadastrar Cliente
                 </button>
             </div>
@@ -64,7 +64,7 @@
                     <table id="customer">
                         <thead>
                             <tr>
-                                <th >
+                                <th>
                                     ID
                                 </th>
                                 <th>
@@ -111,64 +111,71 @@
                 </div>
 
             </div>
-            
+
         </section>
         <div id="translucid-screen" class="translucid-screen hide">
         </div>
         <div id="customer-form" class="form hide">
-                <div>
-                    NEW CUSTOMER
-                </div>
-                <div>
+            <div class="form-header">
+                NEW CUSTOMER
+            </div>
+            <div class="form-info">
+                <div class="form-group">
                     <label for="cname">
                         NAME
                     </label>
-                    <input id="cname" type="text" name="cname">
+                    <input id="cname" type="text" name="cname" class="form-input">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="cemail">
                         EMAIL
                     </label>
-                    <input id="cemail" type="text" name="cemail">
+                    <input id="cemail" type="text" name="cemail" class="form-input">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="cphone">
                         PHONE
                     </label>
-                    <input id="cphone" type="text" name="cphone">
+                    <input id="cphone" type="text" name="cphone" class="form-input">
                 </div>
-                <button id="c-submit" class="btn btn-submit">
-                    Submit
-                </button>
+                <div id="err" class="hide form-input err">
+                </div>
 
             </div>
-            <div id="product-form" class="form hide">
-                <div>
-                    FILL PRODUCT'S INFO
-                </div>
-                <div>
+            <button id="c-submit" class="btn btn-submit">
+                Submit
+            </button>
+        </div>
+        <div id="product-form" class="form hide">
+            <div class="form-header">
+                NEW PRODUCT
+            </div>
+            <div class="form-info">
+                <div class="form-group">
                     <label for="pname">
                         NAME
                     </label>
-                    <input id="pname" type="text" name="pname">
+                    <input id="pname" type="text" name="pname" class="form-input">
                 </div>
-                <div>
-                    <label>
+                <div class="form-group">
+                    <label for="pprice">
                         PRICE
                     </label>
-                    <input id="pprice" type="text" name="pprice" placeholder="$">
+                    <input id="pprice" type="text" name="pprice" class="form-input">
                 </div>
-                <div>
-                    <label>
-                        AVAILABLE QUANTITY
+                <div class="form-group">
+                    <label for="pquantity">
+                        QUANTITY
                     </label>
-                    <input id="pqtt" type="text" name="pqtt">
+                    <input id="pquantity" type="text" name="pquantity" class="form-input">
                 </div>
-                <button id="p-submit" class="btn btn-submit">
-                    Submit
-                </button>
-
+                <div id="err2" class="hide form-input err">
+                </div>
             </div>
+            <button id="p-submit" class="btn btn-submit">
+                Submit
+            </button>
+        </div>
     </main>
     <footer>
         <div class="flex-fcontainer">

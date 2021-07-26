@@ -15,6 +15,12 @@
     border-style: solid;
 }
 
+.btn-submit { 
+    border-radius: 3px;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
 .btn-circle {
     border-radius: 50%;
     height: 60px;
@@ -22,3 +28,4 @@
     border-color: gainsboro;
     border-style:solid;
 }
+
